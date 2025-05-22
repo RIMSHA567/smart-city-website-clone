@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+      /* navpart start */
+body{
+    padding-top:92px;
+}
+.nav_container_fluid{
+    border: 1px solid black;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    padding-left: 2vw;
+    position: fixed;
+    top: 0px;
+   
+  z-index: 1;
+  background: white;
+
+}
+
+
+
+.navbar_div_img{
+    height: 57px;
+    width: 65px;
+    /* border: 1px solid red; */
+}
+.navbar_div_img img{
+    width: 100%;
+}
+
+.nav-link{
+    font-size: 1.3vmax;
+    font-weight: bolder;
+    color: #004282;
+     
+
+}
+
+.nav-link:hover{
+     border-bottom: solid rgb(36, 133, 36) 3px;
+
+}
+
+.nav_button_div{
+    margin-left: 3vw;
+
+}
+
+.nav_link_btn1{
+
+  font-size: 1.3vmax;
+  font-weight: bolder;
+  color: aliceblue;
+  background-image: linear-gradient(to right, rgb(36, 133, 36) 30%,hwb(95 33% 22%) 60%);
+  border-radius: 5px;
+  border:rgb(36, 133, 36) 2px solid;
+  padding: 3px;
+  margin-right: 2px;
+
+}
+.nav_link_btn2{
+   
+    font-size: 1.3vmax;
+    font-weight: bolder;
+    color: #004282;;
+    color: orange;
+    border-radius: 5px;
+    border: orange 2px solid;
+    background: white;
+    padding: 3px;
+    
+   
+
+}
+.nav_link_btn2:hover{
+    
+    
+    background: orange;
+    color: aliceblue;
+    
+
+}
+
+
+
+
+                          /* booking form part */
+
+.container_fluid_bookingform{
+    background:#306598;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container_bookingform a{
+
+   
+    color: aliceblue;
+    background-image: linear-gradient(to right, rgb(36, 133, 36) 30%,hwb(95 33% 22%) 60%);
+   
+    border:rgb(36, 133, 36) 1px solid;
+    
+  
+  }
+
+
+                              /* project overview part */
+.container_fluid_projectoverview h3{
+    color: #004282;
+
+}                          
+  .container_fluid_projectoverview ul{
+    padding: 0;
+    list-style: none;
+
+
+  }
+
+  .container_fluid_projectoverview ul li i{
+   color: #004282;
+
+
+  }
+
+
+  .container_fluid_projectoverview a{
+    font-size: 1.3vmax;
+  font-weight: bolder;
+  color: aliceblue;
+  background-image: linear-gradient(to right, rgb(36, 133, 36) 30%,hwb(95 33% 22%) 60%);
+  border-radius: 5px;
+  border:rgb(36, 133, 36) 2px solid;
+  padding: 3px;
+  margin-right: 2px;
+ 
+   }
+
+
+   .container_fluid_projectoverview {
+    font-size: 17px;
+
+  }
+              /* More than a plot */
+
+
+     .container_fluid_more_than_a_plot {
+           background: #f3f3f3;   
+            
+     }
+
+            
+
+  .container_fluid_more_than_a_plot .row_1{
+    text-align: center;
+
+  }
+
+  .container_fluid_more_than_a_plot .row_1 h2{
+     color: #004282;
+  }
+
+  .container_fluid_more_than_a_plot .row_2 .row_2_col_1_div p{
+    margin-left: 5px;
+
+  }
+
+  
+  .container_fluid_more_than_a_plot .row_2_col_1_div{
+    margin-bottom: 5px;
+
+  }
+
+
+  .container_fluid_more_than_a_plot .row_2 .row_2_col_3_div p{
+    margin-right: 5px;
+
+  }
+
+
+
+                              /* .PBRERA part */
+
+
+
+  .container_fluid_PBRERA .PBRERA_div{
+    width: 30%;
+    height: 25%;
+   
+  }
+
+
+  .container_fluid_PBRERA .PBRERA_div img{
+   width: 100%;
+   
+  }
+
+
+  .container_fluid_PBRERA .row_1 .col_1  .PBRERA_div{
+    margin: auto;
+   
+  }
+
+
+  .container_fluid_PBRERA_3_div{
+    /* padding-left: 90px;
+    padding-right: 90px; */
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    box-shadow: 3px 3px 13px 3px #938c8c;
+   
+  }
+
+  
+  .row_3 h6{
+    font-size: 35px;
+    font-weight: bolder;
+  }
+
+  .row_3 p{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+
+  /* why_smart_city  part*/
+
+  .why_smart_city{
+    background: #f3f3f3;
+  }
+
+
+  .why_smart_city_div_body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+
+  .why_smart_city_div_body i{
+  color: blue;
+  }
+
+
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+   color: black;
+   border-bottom: #004282 solid 2px;
+   background: #f3f3f3;
+   border-radius: 0px;
+}
+.why_smart_city h2{
+  color: #004282;
+  font-weight: bolder;
+}
+.first_td{
+  background: #f3f3f3 !important;
+}
+     /* price list part */
+
+
+.price_list_part h2{
+
+      color: #004282;
+      
+    
+ }
+.price_list_part_table th{
+
+  background: #306598 !important;
+  color: white;
+  
+
+}
+
+.price_list_part_table button{
+  background-color: black;
+  color: #f3f3f3;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-weight: bold;
+
+}
+
+
+.price_list_part_table button:hover{
+  background-color: rgba(245, 228, 41, 0.829);
+  color: black;
+ 
+}
+                    /* Highlights PART */
+ .highlights_smartcity h2{
+
+     color: #004282;
+  }                    
+
+.highlights_col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlights_col p{
+ font-size: 16px;
+}
+
+
+.highlights_smartcity button{
+  background: #ffc107;
+  color: black;
+ border-radius: 10px;
+ box-shadow: 0px 30px 50px 8px rgb(98, 91, 91);
+ font-weight: bolder;
+
+}
+
+
+.highlights_smartcity button:hover{
+  background: #0fa624;
+  color: black;
+  
+ 
+
+}
+
+                   /* Experience PART */
+
+
+.experience_part h2{
+  color: #004282;
+}
+
+
+.experience_part p{
+  font-size: 19px;
+}
+
+.experience_part iframe{
+
+  width: 100%;
+}
+
+
+             /* Site Plan PART */
+
+
+.siteplan_part img{
+  height: 70%;
+}
+
+.siteplan_part p{
+  font-size: 19px;
+}
+
+.siteplan_part h2{
+  color: #004282;
+}
+
+.siteplan_part button{
+  background: #ffc107;
+  color: black;
+ border-radius: 10px;
+ box-shadow: 0px 30px 50px 8px rgb(98, 91, 91);
+ font-weight: bolder;
+
+}
+
+.siteplan_part button:hover{
+  background: #0fa624;
+  color: black;
+  
+
+}
+
+
+
+             /*Location PART */
+
+.location_part img{
+  height: 78%;
+}
+
+.location_part p{
+   font-size: 19px;
+ }
+ 
+.location_part h2{
+   color: #004282;
+ }
+
+                            /*Map PART */
+                            /* no css */
+
+
+                               /*            acccordian1  PART                    */
+                            /*                 no css                      */
+
+
+
+ 
+                            /*project gallery PART */
+                            /* no css */
+
+                            /* home loan facility  part     */
+
+ .home_loan_facility h2{
+  color: #004282;
+ }   
+ 
+ 
+ 
+ .home_loan_facility p{
+  font-size: 19px;
+ }   
+
+
+ .home_loan_facility img{
+
+height: 100%;
+width: 100%;
+ }   
+
+
+
+
+ .home_loan_innerdiv{
+  box-shadow: 2px 2px 5px 1px rgb(173, 168, 168);
+  height: 170px;
+ }
+
+
+
+
+                                                  /* schedule site visit part */
+ .border_col{
+  border: #306598 7px solid;
+ }
+
+
+ .schedule_site_visit button{
+ 
+  background-image: linear-gradient(to right, rgb(36, 133, 36) 30%,hwb(95 33% 22%) 60%);
+  color: aliceblue;
+  font-weight: bold;
+ 
+  }
+
+
+  .schedule_site_visit h3{
+    color: #004282;
+  
+    
+     }
+
+   .schedule_site_visit h3{
+      color: #004282;
+      font-size: 23px;
+      
+       }
+
+ 
+       .schedule_site_visit{
+        background: #f3f3f3;
+      
+       }       
+       .website_footer{
+        background: #306598;
+        color: aliceblue;
+
+       }
+
+
+
+
+
+
+
+
+
+
+
+

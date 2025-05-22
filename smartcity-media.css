@@ -1,0 +1,16 @@
+@media  (max-width : 575px)
+{       
+    /* for nav */
+     .nav-link{
+        font-size:15px ;
+      
+    }
+    .nav_button_div{
+        margin-top: 2.5vw;
+        margin-left: 0;
+    
+    }
+     
+    
+}
+

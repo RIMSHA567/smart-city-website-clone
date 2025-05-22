@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART CITY</title>
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" href="smartcity.css">
+    <link rel="stylesheet" href="smartcity-media.css">
+</head>
+<body> 
+
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Fill the form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="bookingsection">
+
+
+          <div class="container">
+
+            <form action="/action_page.php">
+
+
+             <p class="h1">BOOKING</p>
+
+             <div class="form-floating my-2">
+              <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+              <label for="name" >Name</label>
+            </div>
+
+            <div class="form-floating my-2">
+              <input type="age" class="form-control" id="age" placeholder="Enter age" name="age" required>
+              <label for="age" >Age</label>
+            </div>
+
+              <div class="form-floating my-2">
+                <input type="text" class="form-control" id="gender" placeholder="Enter gender" name="gender" required>
+                <label for="gender">Gender</label>
+              </div>  
+
+              <div class="form-floating my-2">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                <label for="email">Email</label>
+              </div>
+
+              <div class="form-floating my-2 ">
+                <input type="phone" class="form-control" id="pwd" placeholder="Enter phone" name="phone" required>
+                <label for="phone">Phone</label>
+              </div>
+
+              <div class="form-floating my-2">
+                <textarea class="form-control" id="comment" name="text" placeholder="other info"  rows="20" cols="30"></textarea>
+                <label for="comment">Other information</label>
+              </div>
+            
+
+
+            </form>
+
+          </div>
+      </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- nav full part -->
+
+    <div class="container-fluid  nav_container_fluid">
+      
+        <div class="row"> 
+            <div class="col-12">
+
+                <nav class="navbar navbar-expand-md  ">
+                
+                    <a class="navbar-brand  navbar_div_img" href="#">
+                        <img src="https://smartcitymohaliplots.realtynivesh.com/Logo.svg" alt="">
+                    </a>
+
+                       <!-- toggler button only for mobiles -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasconnect" >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                          
+                      
+                      <div class="collapse navbar-collapse justify-content-end" id="">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link " active aria-current="page" href="#overview">Overview</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link" href="#projecthighlights">Projects Highlights</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#siteplan">Site Plan</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#location">Location</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#pricelist">Price List</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#contactus">Contact us</a>
+                          </li>
+                          
+                        </ul>
+
+                        <div class="nav_button_div d-flex">
+                            
+                                <a class="nav-link nav_link_btn1 " href="#exampleModal" data-bs-toggle="modal" >Book Online</a>
+                                <a class="nav-link nav_link_btn2" href="#">Call Us at 03456788971</a>
+                             
+                        </div>
+                      </div>
+                  
+
+
+                  </nav>
+
+                  <!-- collapse : that comes from sides of computer  -->
+                   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasconnect" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                           <!-- copy collapsebody (ul,button) from collapse code -->
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link " active aria-current="page" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link" href="#projecthighlights">Projects Highlights</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#siteplan">Site Plan</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#location">Location</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#pricelist">Price List</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#contactus">Contact us</a>
+                        </li>
+                        
+                      </ul>
+
+                      <div class="nav_button_div d-flex">
+                            
+                        <a class="nav-link nav_link_btn1" href="#exampleModal" data-bs-toggle="modal" >Book Online</a>
+                        <a class="nav-link nav_link_btn2" href="#">Call Us at 03456788971</a>
+                     
+                      </div>
+                      
+                    </div>
+                  </div>
+
+
+              </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel_main_div" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://smartcitymohaliplots.realtynivesh.com/img/banner4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+            <!-- bookingform  part-->
+
+        <div class="containter-fluid py-5 container_fluid_bookingform" >
+          <div class="container container_bookingform">
+
+            <div class="row mb-4">
+               <div class="col-12">
+                 <h2>Are you interested in FREE Site Visit </h2>
+               </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-3 mb-2 mb-md-0">
+                <input class="form-control required" type="text" placeholder="ENTER NAME" required >
+              </div>
+              <div class="col-md-3 mb-2 mb-md-0">
+                <input class="form-control" type="phone" placeholder="ENTER PHONE" >
+              </div>
+              <div class="col-md-3 mb-2 mb-md-0">
+                <input class="form-control" type="email" placeholder="ENTER E-MAIL" >
+              </div>
+              <div class="col-md-3 mb-2 mb-md-0">
+                <a href="#" type="submit" class="btn w-100">BOOK A FREE SITE VISIT</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+              
+              <!-- project overview  part-->
+        <div class="container-fluid bg-white py-5 container_fluid_projectoverview" id="overview">
+          <div class="container">
+            <div class="row gy-5">
+              <div class="col-md-6">
+                <img class="img-fluid" src="https://smartcitymohaliplots.realtynivesh.com/img/1.jpeg" alt="">
+
+              </div>
+              <div class="col-md-6">
+
+                <h3 id="overview">PROJECT OVERVIEW</h3>
+              
+                <p>Smart City Mohali is a 22-acre fully integrated plotted development project in Banur-Landran Road Mohali, that includes 446 Residential plots Near Aero City & IT City Mohali with exceptional amenities and intelligent landscaping. The project provides excellent family living options as well as first-rate recreational facilities and amenities to make your life easier. This property has something for everyone, from the clubhouse to the indoor game area, children's playground, yoga & meditation hall, party hall, business center, and cafeteria.</p>
+                 
+                 <p>Smart City Mohali is a 100% clear title project and a bank-approved plot with a full campus compounded wall, an underground EB line, grand elevation architecture, and more. Smart City Mohali will be an ideal place to live with your family as well as work and play.</p>
+                 <ul>
+                  <li><i class="fa-solid fa-check"></i> Plot Size-80/100/110/137 Sq.Yards</li>
+                  <li><i class="fa-solid fa-check"></i> Price Starts From -₹ 20 Lakh </li>
+                  <li><i class="fa-solid fa-check"></i> RERA Approved</li>
+                  <li><i class="fa-solid fa-check"></i> Possession  Immediate</li>
+                 </ul>
+
+                 <a  class= "btn" href="#exampleModal" data-bs-toggle="modal"type="submit" >BOOK NOW</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- MORE THAN JUST A PLOT -->
+      <div class="container-fluid container_fluid_more_than_a_plot py-5">
+          <div class="container">
+
+             <div class="row row_1">
+               <div class="col-12 ">
+                 <h2>MORE THAN JUST A PLOT</h2>
+                 <p>Everything one can find in terms of comfort and convenience is what you can expect at this prestigious project. To achieve this, Smart City Mohali,Near Aerocity Mohali Plots an array of unparalleled facilities that ooze out comfort and conveniences that smack luxury to give life a new direction to effortless living.</p>
+                </div>
+            </div>
+
+           <div class="row row_2 justify-content-centre align-items-center">
+            <div class=" col-12 col-md-4 ">
+                 <div class="d-flex align-items-center fw-bolder row_2_col_1_div">
+                    <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments2.png" alt="" class="image-fluid">
+                    <p>24X7 SECURITY</p>
+                  </div>
+
+                  <div class="d-flex align-items-center fw-bolder row_2_col_1_div">
+                    <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments5.png" alt="" class="image-fluid">
+                    <p>CLOSE TO EDUCATIONAL INSTITUTIONS</p>
+                  </div>
+
+                  <div class="d-flex align-items-center fw-bolder row_2_col_1_div">
+                    <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments7.png" alt="" class="image-fluid">
+                    <p>KIDS PLAY AREA</p>
+                  </div>
+
+                  <div class="d-flex align-items-center fw-bolder row_2_col_1_div">
+                    <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments16.jpg" alt="" class="image-fluid">
+                    <p>NEAR AERO CITY & IT CITY MOHALI</p>
+                  </div>
+
+             </div>
+
+             <div class=" col-12 col-md-4">
+              <img src="https://smartcitymohaliplots.realtynivesh.com/img/269x514%20pixels.jpg" alt="">
+
+             </div>
+
+             <div class=" col-12 col-md-4">
+
+              <div class="d-flex align-items-center fw-bolder justify-content-end  row_2_col_3_div">
+                <p>PART OF 22 ACRES TOWNSHIP</p>
+                <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments13.png" alt="" class="image-fluid">
+              </div>
+
+              <div class="d-flex align-items-center fw-bolder justify-content-end  row_2_col_3_div">
+                <p>40+RESIDENCES</p>
+                <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments3.png" alt="" class="image-fluid">
+              </div>
+
+              <div class="d-flex align-items-center fw-bolder justify-content-end  row_2_col_3_div">
+                <p>WELL-CONNECTED BY ROAD & RAIL </p>
+                <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments20.jpg" alt="" class="image-fluid">
+              </div>
+
+              <div class="d-flex align-items-center fw-bolder justify-content-end  row_2_col_3_div">
+                <p>AVENUE PLANTATIONS</p>
+                <img src="https://smartcitymohaliplots.realtynivesh.com/icon/aments22.jpg" alt="" class="image-fluid">
+              </div>
+
+             </div>
+
+            
+
+          </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <!-- PBRERA part -->
+        <div class="container-fluid  container_fluid_PBRERA py-5">
+             <div class="container">
+              <!-- row1 -->
+                     <div class="row row_1">
+                           <div class="col-12  col_1 ">
+                              <div class="PBRERA_div" >
+                                      <img src="https://smartcitymohaliplots.realtynivesh.com/11.jpg" class="image-fluid" alt="">
+                               </div>
+                           </div>
+                       </div>
+
+               <!-- row2 -->
+             <div class="row pt-4  row_2">
+              <hr>
+              <p>Bring your dream home to life at SmartCity, a project that has the best gated community plots in Mohali. Perfectly located, thoughtfully developed, and the best value for money property of sale near AeroCity Mohali, are the highlights of this stellar project.</p>
+              <p>With a host of amenities like compound walls, street lighting, independent drinking water connections, and children’s park to name a few, SmartCity is the ideal space to build a home that nourishes your family and bring prosperity to your life. </p>
+               <h6>Registry Ready Plots Rera No-PBRERA-SAS81-PR0693</h6>
+            </div>
+
+
+                <!-- row3 -->
+            <div class="row  row_3 py-5 gy-3 gx-3">
+
+
+              
+              <div class="col-6  col-md-3 d-flex justify-content-center align-items-center  container_fluid_PBRERA_row_3_col  ">
+                <div class="container_fluid_PBRERA_3_div  py-3  ">
+                  <img src="https://smartcitymohaliplots.realtynivesh.com/plot.png" alt="">
+                  <h6 >446</h6>
+                  <p>ACRES</p>
+                </div>
+              </div>
+
+
+              <div class="col-6  col-md-3 d-flex justify-content-center align-items-center  container_fluid_PBRERA_row_3_col  ">
+                <div class="container_fluid_PBRERA_3_div  py-3 ">
+                  <img src="https://smartcitymohaliplots.realtynivesh.com/management.png" alt="">
+                  <h6>22</h6>
+                  <p>PLOTS</p>
+                </div>
+              </div>
+
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center  container_fluid_PBRERA_row_3_col  ">
+                <div class="container_fluid_PBRERA_3_div   py-3 ">
+                  <img src="https://smartcitymohaliplots.realtynivesh.com/plot.png" alt="">
+                  <h6>20</h6>
+                  <p>LIFESTYLE <br>AMENITIES </p>
+                </div>
+              </div>
+
+
+              <div class=" col-6 col-md-3 d-flex justify-content-center align-items-center  container_fluid_PBRERA_row_3_col  ">
+                <div class="container_fluid_PBRERA_3_div  py-3 ">
+                  <img src="https://smartcitymohaliplots.realtynivesh.com/plot.png" alt="">
+                  <h6>20</h6>
+                  <p>LAKS*</p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- navs and tabs part -->
+        <div class="container-fluid why_smart_city py-5">
+          <div class="container">
+
+            <div class="row justify-content-center py-4">
+              <div class="col-6 text-center">
+
+                <h2>WHY SMART CITY?</h2>
+                <p>Your Dream Home Awaits you to Own Exquisite Site in the Smart City. </p>
+
+
+                
+
+              </div>
+            </div>
+
+
+            <div class="row  justify-content-start justify-content-md-center">
+              <div class="col-12 col-md-10 ">
+
+                <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist" >
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-bank-tab" data-bs-toggle="pill" data-bs-target="#bank" type="button" role="tab" aria-controls="pills-bank" aria-selected="true">Bank Approved Projects</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-potable-tab" data-bs-toggle="pill" data-bs-target="#potable" type="button" role="tab" aria-controls="pills-potable" aria-selected="false">Potable Drinking Water</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-locality-tab" data-bs-toggle="pill" data-bs-target="#locality" type="button" role="tab" aria-controls="pills-locality" aria-selected="false">Appreciating Locality</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-stormwater-tab" data-bs-toggle="pill" data-bs-target="#stormwater" type="button" role="tab" aria-controls="pills-stormwater" aria-selected="false">Stormwater Drain</button>
+                  </li>
+                 
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="bank" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <!-- write ownself start-->
+                    <div class="row">
+                      <div class="col-4 why_smart_city_div_body" >
+                        <p><i class="fa-solid fa-check"></i>Fully approved by bank</p>
+                        <p><i class="fa-solid fa-check"></i>Fully verified by bank</p>
+                        <p><i class="fa-solid fa-check"></i>Easy installment plans</p>
+                        <p><i class="fa-solid fa-check"></i>Well planed areas</p>
+
+
+                      </div>
+                      <div class="col-4 why_smart_city_div_body">
+                        <p><i class="fa-solid fa-check"></i>Follows all government regulations</p>
+                        <p><i class="fa-solid fa-check"></i>Organized infrastructure</p>
+                        <p><i class="fa-solid fa-check"></i>Proper sequrity</p>
+                        <p><i class="fa-solid fa-check"></i>Road,gas,electricity available</p>
+
+                      </div>
+                    </div>
+                     <!-- write ownself end-->
+
+
+                  </div>
+
+
+                  <div class="tab-pane fade" id="potable" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                    <!-- write ownself start-->
+                    <div class="row">
+                      <div class="col-4 why_smart_city_div_body" >
+                        <p><i class="fa-solid fa-check"></i>Safe & Clean</p>
+                        <p><i class="fa-solid fa-check"></i>Purification Process </p>
+                        <p><i class="fa-solid fa-check"></i> Mineral Balance  </p>
+                        <p><i class="fa-solid fa-check"></i>Odor & Taste-Free </p>
+
+
+
+
+                      </div>
+                      <div class="col-4 why_smart_city_div_body">
+                        <p><i class="fa-solid fa-check"></i>Easy to Transport</p>
+                        <p><i class="fa-solid fa-check"></i> Certified & Tested</p>
+                        <p><i class="fa-solid fa-check"></i> Long Shelf Life    </p>
+                        <p><i class="fa-solid fa-check"></i>Eco-Friendly Packaging</p>
+
+                      </div>
+                    </div>
+                     <!-- write ownself end-->
+
+
+                  </div>
+
+
+                  <div class="tab-pane fade" id="locality" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                      <!-- write ownself start-->
+                      <div class="row">
+                        <div class="col-4 why_smart_city_div_body" >
+                          <p><i class="fa-solid fa-check"></i>Prime location</p>
+                          <p><i class="fa-solid fa-check"></i>High Demand </p>
+                          <p><i class="fa-solid fa-check"></i> Well deveoped infrastructure </p>
+                          <p><i class="fa-solid fa-check"></i>Safety and security </p>
+  
+  
+  
+  
+                        </div>
+                        <div class="col-4 why_smart_city_div_body">
+                          <p><i class="fa-solid fa-check"></i>Proximating to essential services</p>
+                          <p><i class="fa-solid fa-check"></i> Rising property value</p>
+                          <p><i class="fa-solid fa-check"></i> Good connectivity </p>
+                          <p><i class="fa-solid fa-check"></i>Claen and green environment</p>
+  
+                        </div>
+                      </div>
+                       <!-- write ownself end-->
+  
+                    
+                    </div>
+
+
+                  <div class="tab-pane fade" id="stormwater" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                    <!-- write ownself start-->
+                    <div class="row">
+                      <div class="col-4 why_smart_city_div_body" >
+                        <p><i class="fa-solid fa-check"></i>Efficient water flow</p>
+                        <p><i class="fa-solid fa-check"></i>Clog resistant design </p>
+                        <p><i class="fa-solid fa-check"></i> Durable construction </p>
+                        <p><i class="fa-solid fa-check"></i>Proper filteration system</p>
+
+
+
+
+                      </div>
+                      <div class="col-4 why_smart_city_div_body">
+                        <p><i class="fa-solid fa-check"></i>environmental sustainability</p>
+                        <p><i class="fa-solid fa-check"></i> Low maintainance</p>
+                        <p><i class="fa-solid fa-check"></i> Flood prevention </p>
+                        <p><i class="fa-solid fa-check"></i>Smart drainge network</p>
+
+                      </div>
+                    </div>
+                     <!-- write ownself end-->
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Price list part -->
+         <div class="container-fluid py-5  price_list_part" id="pricelist">
+                     <div class="container">
+                             <div class="row justify-content-center">
+                                       <div class="col-5 d-flex justify-content-center">
+                                        <h2>PRICE LIST</h2>
+
+                                        </div>
+                              </div>
+
+                  <hr>
+            
+
+
+                       <div class="row justify-content-center mb-3">
+                              <div class="col-8 d-flex justify-content-center">
+                                      <h6>AVAIL LIMITED PERIOD OFFERS</h6>
+                             </div>
+
+                       </div> 
+
+
+
+                      <div class="row justify-content-center price_list_part_table mb-4">
+
+
+                       <div class="col-12 col-md-8 ">
+                        <table class="table table-bordered border-black">
+                          <thead class="text-center ">
+                            <tr>
+                              <th scope="col" colspan="2" class="py-4">SMART CITY Plots Near Aero City Mohali - Landran-Banur Road <br><span>Register To Unlock Special Offer Prices Now</span></th>
+                            </tr>
+                            <tr>
+                              <th scope="col" class="py-3">Plot Size</th>
+                              <th scope="col" class="py-3">Size</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-center">
+                            <tr>
+                              <td scope="row" class="first_td py-3">80 Sq.Yards</td>
+                              <td><button class="btn" >🔒Unlock Price</button></td>   
+                            </tr>
+                            <tr>
+                              <td scope="row" class="first_td py-3">100 Sq.Yards</td>
+                              <td><button class="btn">🔒Unlock Price</button></td>   
+                            </tr>
+                            <tr>
+                              <td scope="row" class="first_td py-3">110 Sq.Yards</td>
+                              <td><button class="btn">🔒Unlock Price</button></td> 
+                            </tr>
+                            <tr>
+                              <td scope="row" class="first_td py-3">137 Sq.Yards	</td>
+                              <td><button class="btn">🔒Unlock Price</button></td> 
+                            </tr>
+                          </tbody>
+                        </table>
+
+
+                       </div>
+
+
+
+                      </div>
+
+
+            <div class="row justify-content-center">
+              <div class="col-10 d-flex justify-content-center">
+                <img src="https://smartcitymohaliplots.realtynivesh.com/img/Site%20visit%20slide%202.jpg" alt="" class="img-fluid">
+              </div>
+
+
+
+            </div>
+          </div>
+         </div>
+
+
+
+         <!-- highlights of smart city -->
+
+
+
+         <div class="container-fluid highlights_smartcity" >
+          <div class="container" id="projecthighlights">
+
+
+            <div class="row justify-content-center">
+
+             
+                <div class="col-12 text-center">
+                 <h2  >HIGHLIGHTS OF SMARTCITY</h2>
+                </div>
+      
+            </div>
+
+            <hr>
+            <div class="row d-none  row-cols-md-3 d-md-flex mt-4">
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download.png" alt=""></div>
+                <p class="text-center">Ready To Construct Plots Starting At 20 <br>Lakhs*</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(1).png" alt=""></div>
+                <p class="text-center">Premium Small Size Plots Nestled Amidst <br>Abundant Greenery</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(2).png" alt=""></div>
+                <p class="text-center">Multiple Landscaped Gardens & Walking<br>Track</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(3).png" alt=""></div>
+                <p class="text-center">446 Residential Plots Spanning Across 22 <br>Acres</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(4).png" alt=""></div>
+                <p class="text-center">Just 5 Mins Drive From Infosys & IT City <br>Mohail</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(1).png" alt=""></div>
+                <p class="text-center">10 Mins Drive From Chandigarh<br>International Airport</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(5).png" alt=""></div>
+                <p class="text-center">2 Km from Patiala Road Toll Booth</p> 
+              </div>
+
+              <div class="col highlights_col mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(6).png" alt=""></div>
+                <p class="text-center">5 Min From Amity University & Chitkara <br>University</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(7).png" alt=""></div>
+                <p class="text-center">Excellent connectivity to <br>Punjab/HP/Haryana Via PR-7</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(10).png" alt=""></div>
+                <p class="text-center">Ready To Register With Bank Loan <br>Assistance</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(7).png" alt=""></div>
+                <p class="text-center">Major Upcoming Infrastructure <br>Development Projects by Punjab Govt</p> 
+              </div>
+
+              <div class="col highlights_col  mb-4">
+                <div><img src="https://smartcitybymanor.netlify.app/img/download%20(8).png" alt=""></div>
+                <p class="text-center">Premium & Affordable Plots Near <br>Aerocity Mohali</p> 
+              </div>
+
+
+            </div>
+
+
+            <div class="row justify-content-center ">
+
+              <div class="col-12 col-md-5 text-center mb-5">
+                <button class="btn py-3 px-5  ">BOOK SITE VISIT</button>
+
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <!-- EXPERIENCE part -->
+         <div class="container-fluid experience_part py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="text-center mb-4">EXPERIENCE THE LOCATION OF SMART CITY PROJECT</h2>
+                <p class="text-center">Checkout the videos to know more about the 22 Acres Plotted Development & Prime Location Advantages it has to offer.</p>
+              </div>
+            </div>
+
+            <div class="row gy-3">
+              <div class="col-md-6">
+
+                <iframe width="640" height="325" src="https://www.youtube.com/embed/nt_16YTQGZs?si=WbT1eSDWUpnyBpmX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <iframe width="640" height="325" src="https://www.youtube.com/embed/_ysF60THjzs?si=CWAC4TehVuOdnlC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+              </div>
+            </div>
+          </div>
+         </div>
+
+
+         <!-- Site plan part -->
+          <div class="container-fluid siteplan_part py-5 my-5" id="siteplan">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10 text-center">
+                  <h2 class="mb-4">SITE PLAN</h2>
+                  <p>Adj. Bharat Petrol Pump, Near Upcoming Aerocity Extension, Mohali</p>
+                  <img src="https://smartcitybymanor.netlify.app/img/site-map-1-scaled.jpg" alt="" class="img-fluid ">
+                  <button class="btn py-3 px-5 mt-5" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="For Starting Downloading CLICK ON BUTTON">DOWNLOAD BROCHURE</button> 
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+           <!-- Location  part -->
+           <div class="container-fluid location_part py-4 my-5" id="location">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10 text-center">
+                  <h2 class="mb-4">LOCATION</h2>
+                  <p>Your Dream Home Awaits you to Own Exquisite Site in the Smart City.</p>
+                  <img src="https://smartcitybymanor.netlify.app/img/location-map.jpg" alt="" class="img-fluid ">
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+                                                                 <!-- Map PART  -->
+
+            <div class="mapouter  "><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=smart%20city%20mohali&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-i.net">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
+
+                
+
+
+
+
+                                                     <!-- accordian1 -->
+
+
+          <div class="container-fluid py-5 accordian_1">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-9">
+
+                  <h2 class="text-center mb-4">IMPORTANT LANDMARKS</h2>
+
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        KEY LOCATION
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Infosys Mohali <br>
+                          IT City Mohali  <br>
+                          Aero City Mohali  <br>
+                          Chandigarh Internatiol Airport  <br>
+                          Amity University  <br>
+                          Chitkara University Plaksha University  <br>
+                          CGC Landran  <br>
+                          Manav Rachna International School  <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         SCHOOLS
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Sri Kumaran School <br>
+                          Delhi Public School <br>
+                          Jain International School <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         HOSPITALS
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Neelam Hospital <br>
+                          Fortis Hospital Mohali <br>
+                          Civil Hospital Banur  <br>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>                                           
+         
+
+
+
+
+
+
+          <!-- project Gallery -->
+
+          <div class="container-fluid project_gallery py-5" id="gallery">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="text-center">PROJECT GALLERY</h2>
+                </div>
+
+                <div class="row  row-cols-2 row-cols-md-4  gy-4 ">
+
+                  <div class="col">
+                    <div class="img_div"><img src="https://smartcitybymanor.netlify.app/img/1.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/2.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/13%20(1).jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/4.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div class="img_div"><img src="https://smartcitybymanor.netlify.app/img/5.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/4.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/7.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/1.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div class="img_div"><img src="https://smartcitybymanor.netlify.app/img/7.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/10.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/2.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+                  <div class="col">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/13.jpeg" alt="" class="img-fluid"> </div>
+                  </div>
+
+                
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="container-fluid home_loan_facility">
+            <div class="container">
+
+            
+             <div class="row " >
+              <div class="col-12 ">
+                <h2 class="text-center">HOME LOAN FACILITY</h2>
+                <p class="text-center pt-3">Your Dream Home Awaits you to Own Exquisite Site in the Smart City Mohali Project.  </p>
+
+              </div>
+             </div>
+
+              <div class="row  row-cols-2   row-cols-md-6 p-4 justify-content-space-evenly  gy-3">
+
+
+                <div class="col">
+                  <div class="home_loan_innerdiv" ><img src="https://smartcitybymanor.netlify.app/img/1.png" alt="" class="img-fluid " ></div>
+                </div>
+
+                <div class="col">
+                  <div class="home_loan_innerdiv"><img src="https://smartcitybymanor.netlify.app/img/2.png" alt="" class="img-fluid "></div>
+                </div>
+
+                <div class="col">
+                  <div class="home_loan_innerdiv"><img src="https://smartcitybymanor.netlify.app/img/3.png" alt="" class="img-fluid "></div>
+                </div>
+
+                <div class="col">
+                  <div class="home_loan_innerdiv"><img src="https://smartcitybymanor.netlify.app/img/4.png" alt="" class="img-fluid "></div>
+                </div>
+
+                <div class="col">
+                  <div class="home_loan_innerdiv"><img src="https://smartcitybymanor.netlify.app/img/5.png" alt="" class="img-fluid "></div>
+                </div>
+
+                <div class="col">
+                  <div class="home_loan_innerdiv"><img src="https://smartcitybymanor.netlify.app/img/6.png" alt="" class="img-fluid "></div>
+                </div>
+
+               
+              </div>
+            </div>
+          </div>
+
+
+          <!-- schedule site visit part -->
+
+          <div class="container-fluid py-5 schedule_site_visit" id="contactus">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-10  border_col ">
+                 <div class="row align-items-center" >
+                  <div class="col-12 col-lg-6 py-4">
+                    <div><img src="https://smartcitybymanor.netlify.app/img/s3.jpg" alt="" class="img-fluid"></div>
+                  </div>
+
+                  <div class="col-12 col-lg-6 py-3">
+                    <div>
+                      <h3>SCHEDULE YOUR SITE VISIT </h3>
+                      <p class="mt-3">If you are interested in a site visit, please contact us immediately or visit us at the following link to get assistance from our executives and learn more about our project and the benefits you will receive here with us.
+                      </p>
+                      <button class="btn px-0 py-0  px-md-1 py-md-2"><i class="fa-solid fa-phone"></i> &nbsp;MAKE A CALL</button>
+                      <button class="btn  px-0 py-0 px-md-1 py-md-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      data-bs-title= "For starting downloading CLICK ON BUTTON "  ><i class="fa-solid fa-download" ></i>&nbsp;DOWNLOAD PROCEDURE</button>
+
+
+                 </div>
+
+
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- footer -->
+
+
+          <div class="container-fluid website_footer">
+            <div class="container py-5">
+              <div class="row py-5 gy-4">
+
+                <div class="col-12 col-md-6 text-center mb-5">
+                  <h2>SPECIAL LAUNCH OFFERS ON <br>
+                    LIMITED INVENTORY</h2>
+                </div>
+
+
+                <div class="col-12 col-md-6 text-center">
+                  <p>
+                   <span class="fw-bolder"> Phone:</span> +917009247378 <br>
+                   <span class="fw-bolder"> Site Address:</span> <br>
+                    NH-205A, Banur-Landran Road, <br>
+                    Adj. Bharat Petrol Pump, Near Upcoming Aerocity Extension,<br> Mohali</p>  
+                </div>
+
+
+              </div>
+
+
+              <div class="row">
+
+                <div class="col-12 text-center py-5">
+                  <p>Copyright © 2022 - Smartcity. All Rights Reserved. <br>
+                    Terms & Conditions | Privacy Policy</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+    
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script>
+// For adding tooltip in website>>> remainder message when mouse on buttton
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+ </html>
